@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>day1 assignment1</title>
+        <h1>to display current day & time</h1>
+        <script>
+            var mydate = new Date();
+            var day = mydate.getDay();
+            var hours = mydate.getHours();
+            var minutes=mydate.getMinutes();
+            var millisec=mydate.getMilliseconds();
+            var weekday=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+            document.write("Today is :" + weekday[day]);
+            document.write("<br>");
+            hours = hours % 12;
+            var MN = hours >=12 ? 'PM' : 'AM';
+            document.write("current time is :" + hours + MN + ":" + minutes +":" + millisec);
+        </script>
+    <body> </body>
+    </head>
+</html>
